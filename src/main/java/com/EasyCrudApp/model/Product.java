@@ -34,4 +34,13 @@ public class Product {
     public int getProductPrice() {
         return productPrice;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productId=" + productId +
+                ", productName='" + productName + '\'' +
+                ", productPrice=" + productPrice +
+                '}';
+    }
 }
