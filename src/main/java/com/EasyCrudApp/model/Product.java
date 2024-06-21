@@ -1,14 +1,16 @@
 package com.EasyCrudApp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Product {
+    @Id
     private int productId;
     private String productName;
     private int productPrice;
 
-    public Product(int productId, String productName, int productPrice) {
-        this.productId = productId;
-        this.productName = productName;
-        this.productPrice = productPrice;
+    public Product() {
     }
 
     public void setProductId(int productId) {
